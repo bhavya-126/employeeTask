@@ -1,0 +1,20 @@
+<div class="container">
+  <h2>Data from table component of module 1</h2>
+  <table class="table table-light table-striped">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">name</th>
+        <th scope="col">age</th>
+        <th scope="col">gender</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.name }}</td>
+        <td>{{ user.age }}</td>
+        <td>{{ user.gender }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button (click)="addRecord()">Add</button>
+</div>

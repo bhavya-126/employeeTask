@@ -13,7 +13,7 @@ export class AadhaarNoDirective {
   regexAadhaar = '^[0-9][0-9]{0,11}$';
   regexPan = '^[A-Z]{0,5}[0-9]{0,4}[A-Z]{0,1}$'
   str = '';
-  constructor(private element: ElementRef, private renderer: Renderer2) {}
+  constructor(private element: ElementRef) {}
   //  HostListener for keypress and paste eventx
   @Input() elementId:string;
   @HostListener('keypress', ['$event']) onInputChange(event: any) {
